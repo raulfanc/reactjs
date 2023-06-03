@@ -1,8 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import React from "react";
 import Helloworld from "./components/Helloworld";
-import Searching from "./components/Searching";
 import MyClass from "./components/MyClass";
 import Condition from "./components/Condition";
 import Loop from "./components/Loop";
@@ -29,9 +27,9 @@ function App() {
             {/*<Form/>*/}
             {/*<Loaddata/>*/}
             <Routes>
-                <Route path='/' element={<Loop/>}/>
-                <Route path='/form' element={<Form/>}/>
-                <Route path='/loaddata' element={<Loaddata/>}/>
+                <Route path={"/"} element={<Loop/>}/>
+                <Route path={"/form"} element={<Form/>}/>
+                <Route path={"/loaddata"} element={<Loaddata/>}/>
             </Routes>
         </div>
     );
